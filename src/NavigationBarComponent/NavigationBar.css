@@ -1,0 +1,27 @@
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.navbar-toggler-icon {
+  width: 30px;
+  height: 30px;
+  background-image: url('https://cdn.icon-icons.com/icons2/2389/PNG/512/list_heart_icon_144585.png');
+  background-size: cover;
+  background-position: center;
+}
