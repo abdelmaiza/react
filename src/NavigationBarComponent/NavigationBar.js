@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faEnvelope, faSignInAlt } from '@fortawesome/free-solid-svg-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavigationBar.css';
 
@@ -14,7 +14,16 @@ function NavigationBar() {
             <div className="d-flex justify-content-end">
               <div className="navbar-nav">
                 <a className="nav-link" href="#">About</a>
-                <a className="nav-link" href="#">Contact</a>
+                <li className="nav-item">
+                   <a className="nav-link" href="#">
+                     <FontAwesomeIcon icon={faEnvelope} />
+                   </a>
+                </li>
+                <li className="nav-item">
+                   <a className="nav-link" href="#">
+                     <FontAwesomeIcon icon={faSignInAlt} />
+                   </a>
+                </li>
               </div>
             </div>
           </div>
