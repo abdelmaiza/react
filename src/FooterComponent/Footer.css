@@ -1,0 +1,21 @@
+/* Footer.css */
+ul.list-unstyled {
+  margin: 0;
+  padding: 0;
+}
+
+ul.list-unstyled > li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+/* Add underline to section headings */
+.footer-section-heading {
+  border-bottom: 2px solid white;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.border-top {
+  border-top: 1px solid white;
+}

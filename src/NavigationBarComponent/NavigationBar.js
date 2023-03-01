@@ -1,12 +1,13 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faSearch, faEnvelope, faHeart, faSignInAlt } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavigationBar.css';
 
 function NavigationBar() {
    return (
-     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
        <div className="container-fluid">
          <div className="col-sm-6 col-md-2">
             <a className="navbar-brand" href="#">
@@ -37,10 +38,10 @@ function NavigationBar() {
                </a>
              </li>
              <li className="nav-item">
-               <a className="nav-link" href="#">
+               <Link className="nav-link" to="/authentication">
                  <FontAwesomeIcon icon={faSignInAlt} />
                  <span className="nav-link-text">Se connecter</span>
-               </a>
+               </Link>
              </li>
            </div>
          </div>
